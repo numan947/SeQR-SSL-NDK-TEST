@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEST COMPLETED!"
+        android:textColor="@color/purple_700"
+        android:textSize="30sp"
+        android:id="@+id/test_completed"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select A Folder Location to Start"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/text_folder_location"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Folder Location"
+        android:id="@+id/button_folder_location"
+        android:layout_marginBottom="20dp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_horizontal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminateOnly="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Processing: 10/10000"
+        android:id="@+id/text_progress_bar"
+        android:layout_marginBottom="20dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Run Test"
+        android:id="@+id/button_run_test"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Single Image Test"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:id="@+id/single_image_read_qrcode"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera Test"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:id="@+id/camera_qr_code_test"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear All"
+        android:backgroundTint="@color/design_default_color_error"
+        android:id="@+id/button_clear_all"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
